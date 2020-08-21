@@ -1,0 +1,51 @@
+.a-toggle {
+    position: relative;
+    display: inline-flex;
+    height: 22px;
+    width: 60px;
+    input[type="checkbox"] {
+        appearance: none;
+        cursor: pointer;
+        display: inline-block;
+        visibility: hidden;
+        width: 0;
+    }
+}
+.a-toggle__track-wrapper {
+    position: absolute;
+    top: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.a-toggle__track {
+    position: relative;
+    display: flex;
+    border: 1px solid $color-purple-blue;
+    width: 50px;
+    height: 22px;
+    border-radius: 20px;
+}
+
+.a-toggle__ball {
+    position: absolute;
+    display: flex;
+    top: 1px;
+    transform: translateX(4px);
+    border: 2px solid $color-purple-blue;
+    background: $color-white;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+    transition: transform 0.3s ease-in;
+}
+
+.a-toggle--checked {
+    .a-toggle__track {
+        background: rgba(red($color-purple-blue), green($color-purple-blue), blue($color-purple-blue), 0.5)
+    }
+    .a-toggle__ball {
+        transform: translateX(27px);
+    }
+}

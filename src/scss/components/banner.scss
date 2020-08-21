@@ -1,0 +1,49 @@
+.feat-banner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $color-black;
+    color: $color-white;
+    padding: 30px 20px;
+}
+
+.feat-banner--close {
+    transform: translateY(-300px);
+    transition: transform 0.5s ease-out, padding 0.5s;
+    min-height: 0;
+    padding: 0;
+}
+
+.feat-banner__text {
+    @extend .h-typography--medium;
+    @include respond-to('lg', 'xl') {
+        text-align: right;
+    }
+}
+.feat-banner__text--highlighted {
+    color: $color-lumia-green;
+    text-transform: uppercase;
+}
+
+.feat-banner__close {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: $color-white
+}
+
+.feat-banner__btn {
+    &:after {
+        content: 'More';
+        @include respond-to('md', 'xl') {
+            content: 'Start today'
+        }
+    }
+}

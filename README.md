@@ -1,10 +1,9 @@
 # Front-End Task
 
-Basic website with HTML5, CSS3, SCSS, jQuery and JavaScript(ES6)
-
 ## Install
 
-It requires node.js
+For initializing the project please follow next steps
+
 ```bash
 1. get clone https://github.com/mrStefanJ/front-end-task
 2. cd front-end-task
@@ -14,27 +13,22 @@ It requires node.js
 
 The server will run on port 8080. 
 
-## Installation
-
-Use the package manager [npm](https://www.npmjs.com/get-npm) to install webpack.
-
-```webpack
-npm install webpack webpack-cli --save-dev 
 ```
 ## Technologies
-Project is created with:
+Project is using following technologies:
 * HTML5
 * CSS3/SCSS
 * jQuery
 * JavaScript
+* Webpack
+* Bootstrap
 
-I am usiing Babel and it is open-source JavaScript transcopiler that is mainly used to 
+I am using Babel and it is open-source JavaScript transcopiler that is mainly used to 
 convert ECMAScript 2015+ code into a backwards compatible version of JavaScript that 
 can be run by older JavaScript engines.  
 
-I had to do hard-cord for image, because on webpack.config.js 
-I had define image to display but on my computer it did display, so I just coped all image 
-to dist/assets folder.
+If you stumble upon a problem with displaying the images because some of the webpack tasks are not
+working properlly on your machine, simply copy all asstes from /assets folder into /dist/assets folder
 
 ```javascript
 webpack.config.js
@@ -46,9 +40,6 @@ webpack.config.js
         },
       }, 
 ```
-
-I have used bootstrap labraries(news version) beacuse it help to design websites faster and easier 
-and font awesome icons.
 
 ## License
 [MIT](http://choosealincense.com/licenses/mit/)

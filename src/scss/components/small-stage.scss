@@ -1,0 +1,23 @@
+.feat-small-stage {
+    position: relative;
+    margin: 40px 0;
+    background: $color-purple-gray;
+    color: $color-white;
+    height: 280px;
+    text-align: center;
+}
+
+.feat-small-stage__text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.feat-small-stage__title {
+    @extend .h-typography--medium;
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}

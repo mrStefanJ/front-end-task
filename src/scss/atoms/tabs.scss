@@ -1,0 +1,28 @@
+.a-tab {
+    justify-content: center;
+}
+.a-tab__item{
+    padding: 10px;
+    color: $color-purpule;
+    font-size: 20px;
+    line-height: 22px;
+    @extend .h-typography--medium;
+}
+.a-tab__link.a-tab__link{
+    border-radius: 0rem;
+    color: #a8a8a8;
+    border-bottom: solid #a8a8a8;
+    font-size: 20px;
+    &:hover {
+        color: $color-purpule;
+    }
+}
+.a-tab__link.active.a-tab__link.active  {
+    border-radius: 0rem;
+    color: $color-purpule;
+    background-color: $color-white;
+    font-size: 20px;
+    line-height: 22px;
+    @extend .h-typography--medium;
+    border-bottom: 2px solid $color-lumia-green;
+}

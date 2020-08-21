@@ -1,0 +1,31 @@
+.feat-author {
+    margin: 50px 0;
+    text-align: center;
+    color: $color-purpule;
+}
+.feat-author__image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.feat-author__name {
+    margin: 0;
+}
+.feat-author__mail {
+    padding: 0;
+    @extend .h-typography--medium;
+}
+
+.feat-author__description {
+    font-size: 24px;
+    line-height: 26px;
+    @extend .h-typography--medium;
+    margin-bottom: 26px;
+}

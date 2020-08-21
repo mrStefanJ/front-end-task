@@ -1,0 +1,22 @@
+.h-ratings {
+    background-color: $color-grass-green;
+    color: $color-white;
+    font-size: 24px;
+    padding: 5px;
+}
+.h-ratings__star {
+    background-color: $color-white;
+    color: $color-grass-green;
+}
+.h-ratings--filled {
+    font-size: 24px;
+    color: $color-white;
+    padding: 5px;
+    background: linear-gradient(
+        to right,
+        $color-grass-green 0%,
+        $color-grass-green 50%,
+        $color-grey 50%,
+        $color-grey 100%
+    );
+}

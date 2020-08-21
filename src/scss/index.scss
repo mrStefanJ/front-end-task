@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './helpers/typography';
+
+@import './atoms/button.scss';
+@import './atoms/toggle.scss';
+@import './atoms/ratings.scss';
+@import './atoms/accordion.scss';
+@import './atoms/tabs.scss';
+
+
+@import './components/banner.scss';
+@import './components/stage.scss';
+@import './components/small-stage.scss';
+@import './components/cookie.scss';
+@import './components/modal.scss';
+@import './components/teaser.scss';
+@import './components/author.scss';
+@import './components/faq.scss';
+@import "./components/products.scss";
+@import './components/clients.scss';
+@import './components/footer.scss';
+@import './components/header.scss';
+
+.h-show {
+    display: none;
+    @include respond-to('md', 'xl'){
+        display: block;
+        width: 100%;
+    }
+}
+
+.h-hide {
+    display: block;
+    @include respond-to('md', 'xl'){
+        display: none;
+    }
+}
+
+.h-no-scroll {
+    overflow: hidden;
+}

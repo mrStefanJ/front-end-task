@@ -1,0 +1,117 @@
+.feat-footer__address {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-purpule;
+    @extend .h-typography--medium;
+}
+
+.feat-footer__email-address {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-purpule;
+    @extend .h-typography--regular;
+    margin-top: 20px;
+}
+
+.feat-footer__menu,
+.feat-footer__list {
+    color: $color-purpule;
+    @extend .h-typography--medium;
+}
+
+.feat-footer__menu {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+
+.feat-footer__list {
+
+    font-size: 18px;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin-bottom: 12px;
+    }
+}
+
+.feat-footer__list-item-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-purpule;
+    @extend .h-typography--medium;
+
+    &:hover {
+        color: $color-purple-blue;
+        text-decoration: none;
+    }
+}
+.feat-footer__text--middle {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    @include respond-to('md','xl') {
+    text-align: right;
+    }
+}
+.feat-footer__menu-address--center {
+    text-align: center;
+}
+.feat-footer__icon{
+    font-size: 30px;
+}
+.feat-footer__icon-item{
+    color: rgb(180, 180, 180);
+    &:hover {
+        color: $color-lumia-green
+    }
+}
+.feat-footer__payments-icon{
+    width: 130px;
+    height: 50px;
+}
+.feat-footer__text--center{
+    padding: 50px 0;
+    text-align: center;
+}
+.feat-footer__img {
+    width: 50px;
+    height: auto;
+}
+.feat-footer__bank-size{
+    width: 100px;
+    height: auto;
+}
+.feat-footer__partners {
+    display: flex;
+    justify-content: center;
+}
+
+.feat-footer__partners-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.feat-footer__partners-item{
+    margin-right: 50px;
+    font-size: 12px;
+    line-height: 14px;
+    @extend .h-typography--regular;
+}
+.feat-footer__partners-list-item{
+    margin-right: 50px;
+    color: $color-purpule;
+    &:hover {
+        text-decoration:none;
+        color: $color-purpule
+    }
+}
+.feat-footer__copyright{
+    padding-top: 30px;
+}

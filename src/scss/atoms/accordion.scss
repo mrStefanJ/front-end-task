@@ -1,0 +1,76 @@
+.a-accordion {
+  border: none;
+  padding: 10px;
+}
+
+.a-accordion__header.a-accordion__header {
+  background-color: $color-white;
+  padding: 0;
+}
+
+.a-accordion__button.a-accordion__button {
+  font-size: 20px;
+  color: $color-purpule;
+  font-weight: bold;
+  width: 100%;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.a-accordion__button:hover {
+  color: $color-purpule;
+}
+.a-accordion__button-text {
+  margin-bottom: 0;
+}
+.a-accordion__button-icon {
+  color: $color-purpule;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  font-size: 1.5em;
+  position: relative;
+
+  span {
+    position: absolute;
+    transition: 0.3s;
+    background: $color-purpule;
+    border-radius: 2px;
+  }
+
+  span:first-of-type {
+    top: 25%;
+    bottom: 25%;
+    width: 10%;
+    left: 45%;
+    transform: rotate(-90deg);
+  }
+
+  span:last-of-type {
+    left: 50%;
+    right: 50%;
+    height: 10%;
+    top: 45%;
+  }
+}
+
+.collapsed span:first-of-type {
+  transform: rotate(0deg);
+}
+
+.collapsed span:last-of-type {
+  left: 25%;
+  right: 25%;
+  transform: rotate(180deg);
+}
+
+.a-accordion__button-icon--navigation {
+  transform: rotate(-180deg);
+  transition: transform 0.6s ease-in;
+}
+.collapsed .a-accordion__button-icon--navigation {
+  transform: rotate(0deg);
+  transition: transform 0.6s ease-in;
+}

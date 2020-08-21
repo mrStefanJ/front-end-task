@@ -1,0 +1,97 @@
+.feat-modal__content {
+    padding: 30px 20px;
+    padding-right: 30px;
+    color: $color-purpule;
+    background: $color-white;
+    font-size: 14px;
+    line-height: 16px;
+    @extend .h-typography--regular;
+}
+
+.feat-modal__items {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 100%;
+}
+
+.feat-modal__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 26px;
+    @extend .h-typography--medium;
+}
+
+.feat-modal__section {
+    margin-bottom: 26px;
+}
+
+.feat-modal__subsection-title,
+.feat-modal__section-title {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.feat-modal__section-title {
+    font-size: 24px;
+    line-height: 26px;
+    @extend .h-typography--medium;
+}
+.feat-modal__subsection-title {
+    font-size: 16px;
+    line-height: 18px;
+    @extend .h-typography--medium;
+}
+
+.feat-modal__subsection-paragraph {
+    margin-bottom: 30px;
+}
+
+.feat-modal__close {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    top: 20px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    z-index: 10;
+
+    &:after{
+        content: url('data:image/svg+xml;charset=UTF-8, <svg width="20px" height="20px" viewBox="2 2 12 12" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/><path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/></svg>');
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.feat-modal__more-info {
+    color: $color-purpule;
+    text-decoration: underline;
+    &:hover {
+        color: $color-purpule;
+        text-decoration: none;
+    }
+}
+
+.feat-modal__powerby-btn {
+    color: $color-grey;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $color-grey;
+    }
+}
+
+.feat-modal__powerby-btn--ephesize {
+    color: $color-grass-green;
+    font-size: 16px;
+    line-height: 18px;
+}
+.feat-modal__separator {
+    border-color: $color-purpule;
+}

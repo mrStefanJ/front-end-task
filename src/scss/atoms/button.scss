@@ -1,0 +1,47 @@
+.a-button {
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 38px;
+    min-height: 38px;
+    border: 1px solid transparent;
+    outline: none;
+    white-space: nowrap;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.a-primary-button {
+    @extend .a-button;
+    @extend .h-typography--medium;
+    background-color: $color-lumia-green;
+    color: $color-purpule;
+    text-transform: uppercase;
+    &:hover {
+        color: $color-purpule;
+    }
+}
+
+.a-secondary-button {
+    @extend .a-button;
+    @extend .h-typography--medium;
+    border-color: $color-purple-blue;
+    background: $color-white;
+    color: $color-purple-blue;
+    text-transform: uppercase;
+    &:hover {
+        background: rgba(red($color-purple-blue), green($color-purple-blue), blue($color-purple-blue), 0.07);
+    }
+}
+
+.a-tercery-button {
+    @extend .a-button;
+    background: $color-purpule;
+    color: $color-lumia-green;
+    text-decoration: underline;
+}

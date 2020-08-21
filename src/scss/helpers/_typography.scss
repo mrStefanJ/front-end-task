@@ -1,0 +1,50 @@
+@font-face {
+	font-family: Montserrat;
+	src: url('./assets/Montserrat-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url('./assets/Montserrat-Medium.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url('./assets/Montserrat-Light.ttf');
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url('./assets/Montserrat-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+.h-typography {
+	margin: 0;
+	font-family: Montserrat;
+}
+
+.h-typography--regular {
+    @extend .h-typography;
+	font-weight: normal;
+}
+
+.h-typography--medium {
+    @extend .h-typography;
+	font-weight: bold;
+}
+
+.h-typography--light {
+    @extend .h-typography;
+	font-weight: 200;
+}
+
+.h-typography--bold-italic {
+    @extend .h-typography;
+	font-weight: bold;
+	font-style: italic;
+}
