@@ -14,6 +14,20 @@ It requires node.js
 
 The server will run on port 8080. 
 
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/get-npm) to install webpack.
+
+```webpack
+npm install webpack webpack-cli --save-dev 
+```
+## Technologies
+Project is created with:
+* HTML5
+* CSS3/SCSS
+* jQuery
+* JavaScript
+
 I am usiing Babel and it is open-source JavaScript transcopiler that is mainly used to 
 convert ECMAScript 2015+ code into a backwards compatible version of JavaScript that 
 can be run by older JavaScript engines.  
@@ -33,7 +47,6 @@ webpack.config.js
       }, 
 ```
 
-On index.js I hade crete function to automatically scrolling back to top.
 I have used bootstrap labraries(news version) beacuse it help to design websites faster and easier 
 and font awesome icons.
 
