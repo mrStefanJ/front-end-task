@@ -1,4 +1,3 @@
-# front-end-task
 # Front-End Task
 
 Basic website with HTML5, CSS3, SCSS, jQuery and JavaScript(ES6)
